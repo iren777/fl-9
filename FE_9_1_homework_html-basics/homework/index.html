@@ -15,231 +15,135 @@
 
           <img src="..//homework/logo.png" alt="logo">
 
+          <header>
           <h1 id="Homepage">
-            <b>
-              HTML Elements
-            </b>
+            <b>HTML Elements</b>
           </h1>
 
           <hr>
           <!-- Navigation -->
           <nav>
             <a href="#Homepage">
-              <b>
-                Home
-              </b>
+              <b>Home</b>
             </a> &nbsp;&nbsp;
             <a href="#Listofheaders">
-              <b>
-                Headers
-              </b>
+              <b>Headers</b>
             </a> &nbsp;&nbsp;
             <a href="#Table">
-              <b>
-                Table
-              </b>
+              <b>Table</b>
             </a> &nbsp;&nbsp;
             <a href="#List">
-              <b>
-                List
-              </b>
+              <b>List</b>
             </a> &nbsp;&nbsp;
             <a href="#Textformats">
-              <b>
-                Text formats
-              </b>
+              <b>Text formats</b>
             </a> &nbsp;&nbsp;
             <a href="#Blockquotes">
-              <b>
-                Blockquotes
-              </b>
+              <b>Blockquotes</b>
             </a>
           </nav>
 
           <hr>
-          <p>
-            Pay attention to h1 tag inside section element. Font-size for h1 is
-                              <!-- Headers -->
-          <h2 id="Listofheaders">
-            Header 2
-          </h2>
-          <h3>
-            Header 3
-          </h3>
-          <h4>
-            Header 4
-          </h4>
-          <h5>
-            Header 5
-          </h5>
-          <h6>
-            Header 6
-          </h6>
+            </header>
+          <p>Pay attention to h1 tag inside section element. Font-size for 
+            h1 is the same as font-size for h2, because we have to use only one 
+            h1 on the page, and it is commonly used inside header</p>
+                                         <!-- Headers -->
+          <section>
+                              
+          <h2 id="Listofheaders">Header 2</h2>
+          <h3>Header 3</h3>
+          <h4>Header 4</h4>
+          <h5>Header 5</h5>
+          <h6>Header 6</h6>
+          
+          </section>
                           <!-- Table -->
-           <h2 id="Table">
-             Table
-           </h2>
+           
+          <section>
+          <h2 id="Table">Table</h2>
            <table>
              <thead>
                <tr>
-                 <th>
-                   Header
-                 </th>
-                 <th>
-                   Header
-                 </th>
-                 <th>
-                   Header
-                 </th>
+                 <th>Header</th>
+                 <th>Header</th>
+                 <th>Header</th>
                </tr>
              </thead>
              <tbody>
                <tr>
-                 <td>
-                   <b>
-                     Strong
-                   </b>
+                 <td><b>Strong</b>
                   </td>
-                  <td>
-                    CO
-                    <sub>
-                      2
-                    </sub>
-                  </td>
-                  <td>
-                    <a href="google.com.ua">
-                      Some link
-                    </a>
-                  </td>
+                  <td>CO<sub>2</sub></td>
+                  <td><a href="google.com.ua">Some link</a></td>
                 </tr>
                 <tr>
-                  <td>
-                    <i>
-                      Italic
-                    </i>
-                    <td>
-                      <abbr>
-                        Abbreviation
-                      </abbr>
-                      <td>
-                        <del>
-                          Delete
-                        </del>
-                      </tr>
-                      <tr>
-                        <td>
-                          <u>
-                            Underline.
-                          </u>
-                        </td>
-                        <td>
-                          5
-                          <sup>
-                            3
-                          </sup>
-                           = 125
-                         </td>
-                         <td>
-                           <ins>
-                             Inserted
-                           </ins>
-                         </td>
-                       </tr>
-                     </table>
+                  <td><i>Italic</i></td>
+                  <td><abbr>Abbreviation</abbr></td>
+                  <td><del>Delete</del></td>
+               </tr>
+               <tr>
+                 <td><u>Underline.</u></td>
+                 <td>5<sup>3</sup>= 125</td>
+                 <td><ins>Inserted</ins></td>
+               </tr>
+          </table>
+          </section>
                          <!-- Lists -->
-          <h2 id="List">
-            Unordered List
-          </h2>
+          <section>
+          <h2 id="List">Unordered List</h2>
           <ul>
-            <li>
-              List item 1
-            </li>
-            <li>
-              List item 2
+            <li>List item 1</li>
+            <li>List item 2
               <ul>
-                <li>
-                  Some nested list item 1
-                </li>
+                <li>Some nested list item 1</li>
               </ul>
             </li>
-            <li>
-              List Item 3
-            </li>
+            <li>List Item 3</li>
           </ul>
 
-          <h2>
-            Ordered List
-          </h2>
+          <h2>Ordered List</h2>
           <ol>
-            <li>
-              List item 1
-            </li>
-            <li>
-              List item 2
+            <li>List item 1</li>
+            <li>List item 2
               <ol>
-                <li>
-                  Some nested list 1
-                </li>
+                <li>Some nested list 1</li>
               </ol>
             </li>
-            <li>
-              List item 3
-            </li>
+            <li>List item 3</li>
           </ol>
 
-          <h3>
-            Definition List
-          </h3>
+          <h3>Definition List</h3>
           <dl>
-            <dt>
-              defines terms 1
-            </dt>
-            <dd>
-              description 1
-            </dd>
-            <dt>
-              defines terms 2
-            </dt>
-            <dd>
-              description 2
-            </dd>
+            <dt>defines terms 1</dt>
+            <dd>description 1</dd>
+            <dt>defines terms 2</dt>
+            <dd>description 2 </dd>
           </dl>
                              <!-- Details -->
-          <h2>
-            Details
-          </h2>
+          <h2>Details</h2>
           <details open>
             <summary>
               Some details element (open)
             </summary>
-            <p>
-              Here are more details about the details.
-            </p>
+            <p>Here are more details about the details.</p>
           </details>
 
           <details>
             <summary>
               Some details element (close)
             </summary>
-            <p>
-              Here are more details about the details.
-            </p>
+            <p>Here are more details about the details.</p>
           </details>
+          </section>
                            <!-- Text formats -->
           <hr>
-          <h2 id="Textformats">
-            Text formats
-          </h2>
-          <h3>
-            Article Text
-          </h3>
+          <section>
+            <h2 id="Textformats">Text formats</h2>
+          <h3>Article Text</h3>
           <article>
-          <h2>
-            Article title
-          </h2>
-          <h4>
-            Article description
-          </h4>
+          <h2>Article title</h2>
+          <p>Article description</p>
           </article>
                          <!-- Preformated text -->
           <h3> Preformated text</h3>
@@ -263,11 +167,16 @@
     vertical-align: middle;
     justify-content: center;
   }
+  </section>
+           
 
 
          </pre>
+          <section>
                                 <!-- Blockquotes -->
-         <h2 id="Blockquotes">
+         
+            <section>
+            <h2 id="Blockquotes">
            Blockquotes
          </h2>
          <p>
@@ -276,18 +185,15 @@
          </p>
 
          <blockquote>
-           <q>
-             "If you go back a few hundred years, what we take for granted today
+           <q>"If you go back a few hundred years, what we take for granted today
              would seem like magic-being able to talk to people over long
              distances,to transmit images, flying, accessing vast amounts of
              data like an oracle. These are all things that would have been
-             considered magic a few hundred years ago."
-           </q>
+             considered magic a few hundred years ago."</q>
            <br>
-           <a href="https://en.wikipedia.org/wiki/Elon_Musk">
-             Elon Musk
-           </a>
+           <a href="https://en.wikipedia.org/wiki/Elon_Musk">Elon Musk</a>
          </blockquote>
+            </section>
                                <!-- Footer -->
          <footer>
            © Copyright Epam System
