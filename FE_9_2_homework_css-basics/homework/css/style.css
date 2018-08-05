@@ -1,0 +1,169 @@
+                      /* 1st PAGE - PRINT VERSION */
+@media print {
+    @page {
+        margin-top: 1.5cm;
+    }
+
+    body {
+        background: transparent;
+        padding-top: 0;
+      }
+/* Display just the 1st page. Don't display the sidebar on the print version */
+    .tm-sidebar,
+    #about,
+    section:not(:first-of-type) {
+        display: none;
+    }
+/* Avoid spaces and put all items in the middle of the page */
+    .tm-main-content {
+       margin-left: 0;
+       padding-left: 0;
+     }
+/* Change size of the banner  */
+  .tm-banner {
+      height: 6cm;
+      padding: 0;
+    }
+/* Put the picture in the middle of the page */
+    .tm-team-description-container {
+       max-width: none;
+     }
+/* Put the text in the middle of the page */
+   .flex-item:last-child {
+       text-align: center;
+     }
+/* Display the content-boxas a block element */
+    .flex-2-col {
+        display: block;
+      }
+  /* Change color of the title of the "What We Do" section to blue  */
+  h2.tm-section-title {
+        color: #0000FF;
+      }
+    }
+                                 /* 2 */
+@media screen {
+/* Make images rounded */
+    .thumbnail {
+      border-radius: 50%;
+   }
+/* Make hover effect on tiles */
+   .tm-section-title-box:hover {
+     background-color: #00BFFF ;
+     color: #FFFFFF;
+     font-size: 2.5em;
+     font-weight: bold;
+     cursor: pointer;
+ }
+             /* 3 Change color and size of first letter in each paragraphs */
+ p:not(.text-xs-center):first-letter {
+     color: #76cdd7;
+     font-size: 30px;
+   }
+              /* 4 Add box shadow to sidebar and each content block */
+    .tm-main-nav,
+    .tm-content-box {
+        box-shadow: 0 0 15px grey;
+    }
+                              /* 5 Add triangle to the sections  */
+  .tm-content-box:not(:empty)::before {
+    content: " ";
+    position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-top: 30px solid #00BFFF;
+      border-right: 125px solid transparent;
+      border-left: 0px solid transparent;
+  }
+
+  section.blocks > .tm-content-box.flex-2-col {
+    display: none;
+ }
+
+  .tm-content-box {
+      position: relative;
+  }
+             /* 6 Change color of "How We Do It" and add letter spacing */
+  .carousel-item .tm-section-title {
+      color: gainsboro;
+      letter-spacing: 5px;
+  }
+         /* 7  Italic font style for each first paragraph placed after h2 */
+    h2 + p {
+      font-style: italic;
+    }
+/* 8 Space is increased, some free space at the start of the first line */
+    p:not(.tm-banner-text) {
+            line-height: 2em;
+            text-indent: 1.5em;
+          }
+                                     /* 9 */
+/* already visited links become silver color */
+
+            .pad ol a:visited {
+              color: silver;
+            }
+/* Hovered links double underlined */
+            .pad ol a:hover {
+       color: #76cdd7;
+       text-decoration: underline double;
+     }
+/* Add "new" label to the end of "Designers" and "Strategists" */
+     .pad ol a.text::after {
+        content: "New";
+        color: red;
+        font-size: .6em;
+        vertical-align: super;
+    }
+/* Change color of "We Are" to blue and move it to center of the page */
+    .heading h2 {
+        text-align: center;
+        color: #76cdd7;
+    }
+                           /* 10 */
+/* Change background color for some blocks  */
+       .gallery-container .box:nth-child(odd) {
+           background-color: whitesmoke;
+       }
+/* Change the color of the first letters  */
+       .boxes.gallery-container .box p:first-letter {
+        color: #696969;
+    }
+/* Change the color of the first letters  */
+    .boxes.gallery-container div > h2{
+          font-size: 2.6em;
+      }
+/* Change format and styles of the following block  */
+      .boxes.gallery-container .box p {
+      text-indent: initial;
+      font-size: 1.5em;
+      line-height: 1.5em;
+      color: #696969;
+    }
+/*11 Silver border to the bottom of each item of the sidebar, except the last one*/
+   .tm-nav-item:not(:last-of-type) {
+       border-bottom: silver 2px dotted;
+   }
+                                  /* 12 */
+/* Change the text color of text inputs and submit button to red*/
+   .contact-form input,
+   .contact-form button {
+       color: red;
+   }
+/* Add asterisk to email field */
+   .mandatory-field::after {
+        content: "*";
+        color: red;
+        font-weight: bold;
+      }
+
+   .submit-btn:hover {
+       color: white;
+       background: #76cdd7;
+       border-color: transparent;
+   }
+
+
+  }
