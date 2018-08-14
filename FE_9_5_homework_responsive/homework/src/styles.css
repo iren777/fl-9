@@ -1,0 +1,203 @@
+:root {
+  --bg-color--dark: #0a1223;
+  --bg-color--light: #fff;
+  --link: #5d5d5d;
+  --link--active: #54597d;
+  --link--hover: #54597d;
+  --article-title: #ddd;
+  --article-title--dark: #000;
+  --thumbnail--description: #5d5d5d;
+
+  --btn-color: #fff;
+  --btn-bg-color: #5ebcff;
+  --btn-shadow-color: lightgray;
+
+  --navigation-border-bottom: #ddd;
+  --thumbnail-title: #484747;
+}
+
+
+
+body, html {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-color--dark);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 90vw;
+}
+
+.content {
+  margin: 0 auto;
+  width: 60vw;
+  margin-bottom: 100px;
+}
+
+.hyperlink,
+.hyperlink-active {
+  color: var(--link);
+  text-decoration: none;
+}
+
+.hyperlink:hover {
+  color: var(--link--hover);
+}
+
+
+.hyperlink-active,
+.hyperlink-active:active {
+  color: var(--link--active);
+}
+
+.name {
+  color: var(--article-title);
+  text-align: center;
+  font-size: 5vw;
+  margin: 100px 0;
+}
+
+.interestingfact_text h2 {
+  background: linear-gradient(to right, #ddd, #5d5d5d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.interestingfact_text p {
+  text-indent: 20px;
+  text-align: justify;
+  color: var(--thumbnail--description);
+}
+
+.thumbnail {
+  width: 48%;
+  height: auto;
+}
+
+.navigation {
+  list-style-type: none;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.moon,
+.sun,
+.earth {
+  padding-left: 40px;
+}
+
+.interestingfact {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.interestingfact:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.interestingfact_text {
+  width: 48%;
+}
+
+.scroll-up {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .navigation {
+    justify-content: center;
+  }
+
+  .interestingfact,
+  .interestingfact:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+
+  .thumbnail,
+  .interestingfact_text {
+    width: 100%;
+  }
+
+  .thumbnail {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  body, html {
+    background-color: var(--bg-color--light);
+  }
+
+  .wrapper {
+    width: 90vw;
+  }
+
+  .content {
+    width: 80vw;
+  }
+
+  .hyperlink-active,
+  .hyperlink-active:active {
+    font-weight: bold;
+  }
+
+  .navigation {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .moon,
+  .sun,
+  .earth {
+    padding: 10px;
+    border-bottom: 1px solid var(--navigation-border-bottom);
+  }
+
+  .name{
+    font-size: 15vw;
+    color: var(--article-title--dark);
+  }
+
+  .interestingfact_text h2 {
+    font-size: 10vw;
+    background: unset;
+    -webkit-text-fill-color: unset;
+    -webkit-background-clip: unset;
+    color: var(--thumbnail-title);
+  }
+
+  .interestingfact_text p {
+    font-size: 1.5em;
+    color: var(--thumbnail-title);
+  }
+
+  .scroll-up {
+    display: block;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    border-radius: 50%;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-color);
+    box-shadow: 10px 10px 20px var(--btn-shadow-color);
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .scroll-up:visited {
+    color: var(--btn-color);
+  }
+}
